@@ -8,20 +8,53 @@ int main(void)
 
 	while(1)
 	{
-	printf("Here is a simple calc! It counts a+b.\n");
+	printf("Here is a simple calc!\n");
+	char flag='f';
+	printf("Enter A to get summ a+b or enter S to get a-b\n");
+	fflush(stdin);
+	scanf("%c",&flag);
+	if ((flag=='A')||(flag=='a'))
+	{
+	printf("It counts a+b.\n");
 	printf("Enter a:\n");
 	int a,b;
+	fflush(stdin);
 	scanf("%d",&a);
 	printf("Enter b:\n");
 	scanf("%d",&b);
 	printf("a+b=%d\n",a+b);
+	fflush(stdin);
 	getchar();
 	printf("Calc works good! This string is made in commit calc_final, made after hello_add in master branch\n\n");
+	}
+	else
+	{
+		if((flag=='S')||(flag=='s'))
+		{
+			printf("It counts a-b.\n");
+
+			printf("Enter a:\n");
+			int a,b;
+			fflush(stdin);
+			scanf("%d",&a);
+	
+			printf("Enter b:\n");
+			scanf("%d",&b);
+			printf("a-b=%d\n",a-b);
+			fflush(stdin);
+			getchar();
+			printf("Calc works good! This string is made in commit calc_final, made after hello_add in master branch\n\n");
+		}
+	}
 	printf("type q to exit, something else to continue:\n");
-	char flag='A';
+	//char flag='A';
+	fflush(stdin);
 	scanf("%c",&flag);
+	getchar();
+	fflush(stdin);
 	if((flag=='q')||(flag=='Q'))
 	{exit(1);}
+	//fflush(stdin);
 	}
 	return(1);
 }
