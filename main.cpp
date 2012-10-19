@@ -13,6 +13,7 @@ int main(void)
 	scanf("%d",&b);
 	printf("a+b=%d\n",a+b);
 	getchar();
+	printf("Calc works good! This string is made in commit calc_final, made after hello_add in master branch\n\n");
 	printf("type q to exit, something else to continue:\n");
 	char flag='A';
 	scanf("%c",&flag);
