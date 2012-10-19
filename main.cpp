@@ -5,7 +5,7 @@ int main(void)
 	printf("constant from _constants.h_ is: %d\n",main_const);
 	printf("Hello_2!\n");
 	printf("this branch is hello_add. it is parallel to branch calc_inc.\n");
-
+	printf("calc_sub modified.second commit in culc_sub branch\n"); 
 	while(1)
 	{
 	printf("Here is a simple calc!\n");
